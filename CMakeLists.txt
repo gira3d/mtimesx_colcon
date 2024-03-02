@@ -31,7 +31,7 @@ if (MATLAB_FOUND)
 
    include(ExternalProject)
    externalproject_add(mtimesx_src
-     GIT_REPOSITORY git@github.com:rislab/mtimesx.git
+     GIT_REPOSITORY git@github.com:gira3d/mtimesx.git
      GIT_TAG master
      CONFIGURE_COMMAND ""
      BUILD_COMMAND cd ../mtimesx_src/src && mex -DDEFINEUNIX -largeArrayDims mtimesx.c ${BLAS_LIBRARIES}
